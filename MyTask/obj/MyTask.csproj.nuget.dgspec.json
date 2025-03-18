@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zaki.abuawad\\source\\repos\\MyTaskSol\\MyTask\\MyTask.csproj": {}
+    "C:\\Users\\zaki.abuawad\\Desktop\\Zaki_Mohammad_zakemohammad222@gmail.com1732025\\NewTask\\MyTask\\MyTask.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zaki.abuawad\\source\\repos\\MyTaskSol\\MyTask\\MyTask.csproj": {
+    "C:\\Users\\zaki.abuawad\\Desktop\\Zaki_Mohammad_zakemohammad222@gmail.com1732025\\NewTask\\MyTask\\MyTask.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zaki.abuawad\\source\\repos\\MyTaskSol\\MyTask\\MyTask.csproj",
+        "projectUniqueName": "C:\\Users\\zaki.abuawad\\Desktop\\Zaki_Mohammad_zakemohammad222@gmail.com1732025\\NewTask\\MyTask\\MyTask.csproj",
         "projectName": "MyTask",
-        "projectPath": "C:\\Users\\zaki.abuawad\\source\\repos\\MyTaskSol\\MyTask\\MyTask.csproj",
+        "projectPath": "C:\\Users\\zaki.abuawad\\Desktop\\Zaki_Mohammad_zakemohammad222@gmail.com1732025\\NewTask\\MyTask\\MyTask.csproj",
         "packagesPath": "C:\\Users\\zaki.abuawad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zaki.abuawad\\source\\repos\\MyTaskSol\\MyTask\\obj\\",
+        "outputPath": "C:\\Users\\zaki.abuawad\\Desktop\\Zaki_Mohammad_zakemohammad222@gmail.com1732025\\NewTask\\MyTask\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\zaki.abuawad\\AppData\\Roaming\\NuGet\\NuGet.Config",

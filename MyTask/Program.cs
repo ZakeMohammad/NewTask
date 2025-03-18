@@ -34,35 +34,28 @@ static async Task<(DateTime sunriseUtc, DateTime sunsetUtc)> GetSunTimes(string 
 }
 static clsDates CalculateTimeCategories(DateTime sunriseUtc, DateTime sunsetUtc)
 {
-    // Early Morning: 5:00 AM to sunrise
     DateTime earlyMorningStart = sunriseUtc.Date.AddHours(5);
     DateTime earlyMorningEnd = sunriseUtc;
 
-    // Sunrise: from sunrise to 30 minutes after sunrise
     DateTime sunriseStart = sunriseUtc;
     DateTime sunriseEnd = sunriseUtc.AddMinutes(30);
 
-    // Morning: from 30 minutes after sunrise to noon
+
     DateTime morningStart = sunriseUtc.AddMinutes(30);
     DateTime morningEnd = sunriseUtc.Date.AddHours(12);
 
-    // Midday: Around 12:00 PM UTC
     DateTime middayStart = sunriseUtc.Date.AddHours(12);
     DateTime middayEnd = middayStart.AddMinutes(59);
 
-    // Afternoon: from noon to 4:00 PM UTC
     DateTime afternoonStart = middayEnd.AddMinutes(1);
     DateTime afternoonEnd = sunriseUtc.Date.AddHours(16);
 
-    // Evening: from 4:00 PM to sunset
     DateTime eveningStart = sunriseUtc.Date.AddHours(16);
     DateTime eveningEnd = sunsetUtc;
 
-    // Sunset: from sunset to 30 minutes after sunset
     DateTime sunsetStart = sunsetUtc;
     DateTime sunsetEnd = sunsetUtc.AddMinutes(30);
 
-    // Night: from 30 minutes after sunset until the next sunrise
     DateTime nightStart = sunsetUtc.AddMinutes(30);
     DateTime nightEnd = sunriseUtc.AddDays(1);
 
@@ -136,47 +129,6 @@ static void ChangeWallpaper(string wallpaper)
     }
 }
 
-//static async Task<(double? latitude, double? longitude)> GetLocationFromIP(string geolocationApiUrl)
-//{
-//    try
-//    {
-//        using (HttpClient client = new HttpClient())
-//        {
-//            string response = await client.GetStringAsync(geolocationApiUrl);
-//            var json = JsonDocument.Parse(response);
-
-//            if (json.RootElement.TryGetProperty("loc", out var loc))
-//            {
-//                var coordinates = loc.GetString().Split(',');
-
-//                if (coordinates.Length == 2)
-//                {
-//                    if (double.TryParse(coordinates[0], out double latitude) && double.TryParse(coordinates[1], out double longitude))
-//                    {
-//                        return (latitude, longitude);
-//                    }
-//                }
-//            }
-
-//            return (null, null);
-//        }
-
-//    }
-//    catch(Exception ex)
-//    {
-//        Console.WriteLine($"Error : {ex.Message}");
-//        return (null, null);
-
-//    }
-//}
-
-//var (latitude, longitude) = await GetLocationFromIP(geolocationApiUrl);
-//if (latitude == null || longitude == null) {
-//    Console.WriteLine("Error : there are meassing data......");
-//    Console.ReadKey();
-//    return;
-//}
-//
 Console.Clear();
 
 string Answer ="Yes";
